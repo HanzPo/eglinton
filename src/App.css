@@ -1,0 +1,120 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: inherit;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 2.2rem + 1vw, 3rem);
+  font-weight: 700;
+  color: #142033;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #73839c;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #445268;
+}
+
+.timer-grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+@media (width >= 768px) {
+  .timer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.timer-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.timer-card h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1a2840;
+}
+
+.time-parts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+  gap: 1rem;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef3fb 100%);
+}
+
+.part.condensed {
+  background: linear-gradient(180deg, #f5f8fb 0%, #e9eff8 100%);
+}
+
+.value {
+  font-size: clamp(1.85rem, 1.6rem + 0.8vw, 2.4rem);
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.label {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #51607a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.caption {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #55657f;
+  text-align: center;
+}
+
+.overrun {
+  font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.8rem);
+  text-align: center;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.overrun .highlight {
+  font-weight: 700;
+  color: #d73c2c;
+}
