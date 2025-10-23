@@ -120,7 +120,6 @@ const TimerCard = ({
   breakdown: TimeBreakdown
 }) => (
   <section className="timer-card" aria-label={title}>
-    <h2>{title}</h2>
     <div className="time-parts">
       <div className="part">
         <span className="value">

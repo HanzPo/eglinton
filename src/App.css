@@ -58,13 +58,6 @@
   gap: 1.75rem;
 }
 
-.timer-card h2 {
-  margin: 0;
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: #1a2840;
-}
-
 .time-parts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
@@ -102,8 +95,10 @@
 
 .caption {
   margin: 0;
-  font-size: 0.95rem;
-  color: #55657f;
+  font-size: clamp(1.05rem, 0.95rem + 0.45vw, 1.35rem);
+  font-weight: 600;
+  color: #1a2840;
+  line-height: 1.4;
   text-align: center;
 }
 
